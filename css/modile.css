@@ -1,0 +1,157 @@
+@media screen and (max-width:743px){
+   #burger{
+    display: none;
+   } 
+   nav{
+    display: block;
+   }
+   label{
+    display: block;
+    width: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: white;
+
+   }
+   label img{
+    width: 100%;
+    display: block;
+   }
+   label .burger__close{
+    display: none;
+   }
+   .burger:checked + .burger__label .burger__menu{
+    display: none;
+   }
+   .burger:checked + .burger__label .burger__close{
+    display: block;
+    
+   }
+   .burger:checked ~ nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 1000;
+    padding-top:60px ;
+    background-color:#2e2e50;
+   }
+   .burger:checked ~ nav > ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+  .container {
+    padding: 0 20px;
+  }
+
+  
+  .hero-content {
+    text-align: center;
+    padding: 50px 0 30px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  .hero-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #bdbdf5;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn.hire {
+    background-color: #6d28d9;
+    color: white;
+  }
+
+  .btn.cv {
+    background-color: transparent;
+    border: 2px solid #6d28d9;
+    color: #6d28d9;
+  }
+
+ 
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  .about-avatar {
+    margin-bottom: 20px;
+  }
+
+  .avatar-circle img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .about-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .read-more {
+    color: #8b5cf6;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+
+  
+  .burger__label {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .contact-section{
+    flex-direction: column;
+  }
+}
